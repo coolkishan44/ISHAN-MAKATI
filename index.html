@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ishan Assistant</title>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/4478/4478692.png" type="image/png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              wa: {
+                app: 'var(--wa-bg-app)',
+                chat: 'var(--wa-bg-chat)',
+                header: 'var(--wa-header)',
+                panel: 'var(--wa-panel)',
+                incoming: 'var(--wa-incoming)',
+                outgoing: 'var(--wa-outgoing)',
+                border: 'var(--wa-border)',
+                text: 'var(--wa-text-primary)',
+                subtext: 'var(--wa-text-secondary)',
+                teal: 'var(--wa-accent)',
+                input: 'var(--wa-input-bg)',
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      :root {
+        /* Light Mode Defaults (WhatsApp Web Style) */
+        --wa-bg-app: #d1d7db;
+        --wa-bg-chat: #efeae2;
+        --wa-panel: #ffffff;
+        --wa-header: #f0f2f5;
+        --wa-incoming: #ffffff;
+        --wa-outgoing: #d9fdd3;
+        --wa-border: #e9edef;
+        --wa-text-primary: #111b21;
+        --wa-text-secondary: #54656f;
+        --wa-accent: #00a884;
+        --wa-input-bg: #ffffff;
+      }
+
+      /* Custom scrollbar */
+      ::-webkit-scrollbar {
+        width: 6px;
+      }
+      ::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: rgba(0,0,0,0.2);
+        border-radius: 3px;
+      }
+
+      body {
+        background-color: var(--wa-bg-app);
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
